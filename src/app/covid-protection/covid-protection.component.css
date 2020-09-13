@@ -1,0 +1,6 @@
+#demo {
+    background-image: url('../../assets/bg-4.jpg');
+    color: white;
+    z-index: 99;
+    padding: 40px 50px;
+}
