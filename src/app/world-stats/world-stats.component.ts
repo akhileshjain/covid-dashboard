@@ -16,6 +16,7 @@ export class WorldStatsComponent implements OnInit, OnDestroy {
   indConfirmed: Number;
   indRecovered: Number;
   indDeaths: Number;
+  updateDate: any;
 
   constructor(private worldService: WorldService) { }
   
@@ -25,6 +26,8 @@ export class WorldStatsComponent implements OnInit, OnDestroy {
       this.worldConfirmed = res.confirmed.value;
       this.worldRecovered = res.recovered.value;
       this.worldDeaths = res.deaths.value;
+      this.updateDate = new Date(res.lastUpdate);
+
     });
     this.indiaSubsciption = this.worldService.getIndiaStats().subscribe(res => {
       this.indConfirmed = res.data["unofficial-summary"][0].total;

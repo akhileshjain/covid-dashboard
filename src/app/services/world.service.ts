@@ -28,4 +28,12 @@ export class WorldService {
       return throwError(err);
     }))
   }
+
+  getIndiaStates(): Observable<any> {
+    const url = 'https://api.rootnet.in/covid19-in/stats/latest';
+    return this.http.get(url).pipe(map(res => res), catchError(err => {
+      return throwError(err);
+    }))
+  }
+    
 }

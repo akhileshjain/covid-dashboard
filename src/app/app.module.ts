@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { WorldStatsComponent } from './world-stats/world-stats.component';
 import { TopTenComponent } from './top-ten/top-ten.component';
+import { StateListComponent } from './state-list/state-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TopTenComponent } from './top-ten/top-ten.component';
     CovidProtectionComponent,
     FooterComponent,
     WorldStatsComponent,
-    TopTenComponent
+    TopTenComponent,
+    StateListComponent
   ],
   imports: [
     HttpClientModule,

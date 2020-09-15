@@ -1,0 +1,9 @@
+<section>
+    <div class="container">
+        <select class="custom-select mx-10">
+            <option *ngFor = "let state of (this.stateList | async)?.data.regional" value="{{state.loc}}">
+                {{state.loc}}
+            </option>
+        </select>
+    </div>
+</section>
