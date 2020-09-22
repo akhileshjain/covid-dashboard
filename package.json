@@ -2,7 +2,12 @@
   "name": "covid-tracker",
   "version": "0.0.0",
   "author": "Akhilesh Jain",
-  "keywords": ["angular", "bootstrap4", "covid-19", "covid"],
+  "keywords": [
+    "angular",
+    "bootstrap4",
+    "covid-19",
+    "covid"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -28,6 +33,7 @@
     "chart.js": "^2.9.3",
     "jquery": "^3.5.1",
     "ng2-charts": "^2.4.1",
+    "ngx-countup": "^7.3.3",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",

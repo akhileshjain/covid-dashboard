@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import {WorldService} from '../services/world.service';
 import { Subscription } from 'rxjs';
+import {CountUpDirective} from 'ngx-countup';
 
 @Component({
   selector: 'app-world-stats',

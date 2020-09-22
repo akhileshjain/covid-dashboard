@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import { ChartsModule } from 'ng2-charts';
-
+import {CountUpModule} from 'ngx-countup';
 import { AppComponent } from './app.component';
 import { GlobalComponent } from './global/global.component';
 import { LinksComponent } from './links/links.component';
@@ -28,7 +28,8 @@ import { StateListComponent } from './state-list/state-list.component';
     HttpClientModule,
     BrowserModule,
     FontAwesomeModule,
-    ChartsModule
+    ChartsModule,
+    CountUpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

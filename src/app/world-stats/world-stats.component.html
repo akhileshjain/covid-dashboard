@@ -8,7 +8,7 @@
             </div>
             <div class="row justify-content-center py-2 text-white">
                 <div class="col text-white text-center">
-                   <h4>Sourced from <a href="https://github.com/CSSEGISandData/COVID-19">John Hopkins University, CSSE</a></h4>
+                   <h4>Sourced from <a class="text-decoration-none" href="https://github.com/CSSEGISandData/COVID-19">John Hopkins University, CSSE</a></h4>
                 </div>
             </div>
             <div class="row justify-content-center py-2 text-white">
@@ -23,25 +23,29 @@
                 </div>
             </div>
             <div class="row py-2 text-white">
-                <div class="col col-sm-12 col-md-4 text-center">
-                    <div class="card my-2 py-2 bg-warning" style="border-radius: 10px; border-color:white">
+                <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    <div class="card my-2 py-2 bg-warning" style="border-radius: 10px;">
                         <div class="card-title"><h5>TOTAL CONFIRMED</h5></div>
-                        <img src="" alt="" class="card-img img-fluid">
-                        <div class="card-text"><h5>{{this.worldConfirmed}}</h5></div>
-                    </div>
+                        <img src="" alt="" class="card-img img-fluid" height="40px">
+                        <div class="card-text">
+                            <h5 [countUp]="this.worldConfirmed">0</h5>
+                        </div>
+                   </div>
                 </div>
-                <div class="col col-sm-12 col-md-4 text-center">
-                    <div class="card card my-2 py-2 bg-success" style="border-radius: 10px; border-color:white">
+                <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    <div class="card card my-2 py-2 bg-success" style="border-radius: 10px;">
                         <div class="card-title"><h5>TOTAL RECOVERED</h5></div>
                         <img src="" alt="" class="card-img img-fluid">
-                        <div class="card-text"><h5>{{this.worldRecovered}}</h5></div>
+                        <div class="card-text">
+                            <h5 [countUp]="this.worldRecovered">0</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col col-sm-12 col-md-4 text-center">
-                    <div class="card my-2 py-2 bg-danger" style="border-radius: 10px; border-color:white">
+                <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    <div class="card my-2 py-2 bg-danger" style="border-radius: 10px;">
                         <div class="card-title"><h5>TOTAL DEATHS</h5></div>
                         <img src="" alt="" class="card-img img-fluid">
-                        <div class="card-text"><h5>{{this.worldDeaths}}</h5></div>
+                        <div class="card-text"><h5 [countUp]="this.worldDeaths">0</h5></div>
                     </div>
                 </div>
             </div>
@@ -51,25 +55,25 @@
                 </div>
             </div>
             <div class="row py-2 text-white">
-                <div class="col col-sm-12 col-md-4 text-center">
-                    <div class="card my-2 py-2 bg-warning" style="border-radius: 10px; border-color:white">
+                <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    <div class="card my-2 py-2 bg-warning" style="border-radius: 10px;">
                         <div class="card-title"><h5>TOTAL CONFIRMED</h5></div>
                         <img src="" alt="" class="card-img img-fluid">
-                        <div class="card-text"><h5>{{this.indConfirmed}}</h5></div>
+                        <div class="card-text"><h5 [countUp]="this.indConfirmed">0</h5></div>
                     </div>
                 </div>
-                <div class="col col-sm-12 col-md-4 text-center">
-                    <div class="card my-2 py-2 bg-success" style="border-radius: 10px; border-color:white">
+                <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    <div class="card my-2 py-2 bg-success" style="border-radius: 10px;">
                         <div class="card-title"><h5>TOTAL RECOVERED</h5></div>
                         <img src="" alt="" class="card-img img-fluid">
-                        <div class="card-text"><h5>{{this.indRecovered}}</h5></div>
+                        <div class="card-text"><h5 [countUp]="this.indRecovered">0</h5></div>
                     </div>
                 </div>
-                <div class="col col-sm-12 col-md-4 text-center">
-                    <div class="card my-2 py-2 bg-danger" style="border-radius: 10px; border-color:white">
+                <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    <div class="card my-2 py-2 bg-danger" style="border-radius: 10px;">
                         <div class="card-title"><h5>TOTAL DEATHS</h5></div>
                         <img src="" alt="" class="card-img img-fluid">
-                        <div class="card-text"><h5>{{this.indDeaths}}</h5></div>
+                        <div class="card-text"><h5 [countUp]="this.indDeaths">0</h5></div>
                     </div>
                 </div>
             </div>
