@@ -15,7 +15,9 @@ export class AppComponent implements OnInit{
     
       //Use smooth scrolling when clicking on navigation
       $('.navbar-nav a').click(function() {
-        $('.navbar-toggler').click(); //bootstrap 4.x, close menu on selection of an item.
+        if($('.navbar-toggler').css('display') != 'none'){
+            $('.navbar-toggler').click(); //bootstrap 4.x, close menu on selection of an item.
+        }
 
         if (location.pathname.replace(/^\//,'') === 
           this.pathname.replace(/^\//,'') && 
